@@ -1,4 +1,4 @@
-module github.com/kurtosis-tech/stacktrace
+module github.com/mieubrisse/stacktrace
 
 go 1.15
 

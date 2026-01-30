@@ -15,7 +15,7 @@
 package stacktrace_test
 
 import (
-	"github.com/kurtosis-tech/stacktrace"
+	"github.com/mieubrisse/stacktrace"
 )
 
 type PublicObj struct{}

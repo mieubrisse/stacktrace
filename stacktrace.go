@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/kurtosis-tech/stacktrace/cleanpath"
+	"github.com/mieubrisse/stacktrace/cleanpath"
 )
 
 /*

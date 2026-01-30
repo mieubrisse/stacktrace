@@ -22,7 +22,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/kurtosis-tech/stacktrace"
+	"github.com/mieubrisse/stacktrace"
 )
 
 func TestFormat(t *testing.T) {
@@ -40,19 +40,19 @@ func TestFormat(t *testing.T) {
 			format:             stacktrace.FormatFull,
 			specifier:          "%v",
 			expectedPlain:      "plain",
-			expectedStacktrace: "decorated\n --- at github.com/kurtosis-tech/stacktrace/format_test.go:## (TestFormat) ---\nCaused by: plain",
+			expectedStacktrace: "decorated\n --- at github.com/mieubrisse/stacktrace/format_test.go:## (TestFormat) ---\nCaused by: plain",
 		},
 		{
 			format:             stacktrace.FormatFull,
 			specifier:          "%q",
 			expectedPlain:      "\"plain\"",
-			expectedStacktrace: "\"decorated\\n --- at github.com/kurtosis-tech/stacktrace/format_test.go:## (TestFormat) ---\\nCaused by: plain\"",
+			expectedStacktrace: "\"decorated\\n --- at github.com/mieubrisse/stacktrace/format_test.go:## (TestFormat) ---\\nCaused by: plain\"",
 		},
 		{
 			format:             stacktrace.FormatFull,
 			specifier:          "%105s",
 			expectedPlain:      "                                                                                                    plain",
-			expectedStacktrace: "     decorated\n --- at github.com/kurtosis-tech/stacktrace/format_test.go:## (TestFormat) ---\nCaused by: plain",
+			expectedStacktrace: "     decorated\n --- at github.com/mieubrisse/stacktrace/format_test.go:## (TestFormat) ---\nCaused by: plain",
 		},
 		{
 			format:             stacktrace.FormatFull,
@@ -82,7 +82,7 @@ func TestFormat(t *testing.T) {
 			format:             stacktrace.FormatBrief,
 			specifier:          "%+s",
 			expectedPlain:      "plain",
-			expectedStacktrace: "decorated\n --- at github.com/kurtosis-tech/stacktrace/format_test.go:## (TestFormat) ---\nCaused by: plain",
+			expectedStacktrace: "decorated\n --- at github.com/mieubrisse/stacktrace/format_test.go:## (TestFormat) ---\nCaused by: plain",
 		},
 	} {
 		stacktrace.DefaultFormat = test.format

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/kurtosis-tech/stacktrace"
+	"github.com/mieubrisse/stacktrace"
 )
 
 type customError string
